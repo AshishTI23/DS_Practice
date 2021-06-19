@@ -13,4 +13,4 @@ def max_from_range(N, Q):
         print(f"Max from 0 to {Q[i]}:", N[Q[i]])
 
 
-max_from_range([2, 1, 4, 6, 2, 4, 7, 8, 22, 2, 4], (5,7,2))
+max_from_range([2, 1, 4, 6, 2, 4, 7, 8, 22, 2, 4], (5, 7, 2))
