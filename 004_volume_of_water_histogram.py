@@ -9,7 +9,6 @@ def max_volume_of_water(Array):
     left_max = []
     r_max = Array[0]
     l_max = Array[len(Array) - 1]
-    max_volume = 0
     for i in range(len(Array)):
         r_max = max(Array[i], r_max)
         right_max.append(r_max)
@@ -18,6 +17,7 @@ def max_volume_of_water(Array):
         l_max = max(Array[i], l_max)
         left_max.append(l_max)
     left_max = left_max[::-1]
+    max_volume = 0
     for (l, r, Array) in zip(left_max, right_max, Array):
         max_volume += min(l, r) - Array
     return max_volume
